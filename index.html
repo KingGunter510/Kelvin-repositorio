@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gremio de Cazarrecompensas | Conexión Directa</title>
+<link rel="icon" type="image/png" href="img/Mithosaurio.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+                    <div class="logo-container">
+            <img src="img/Mithosaurio.png" alt="Logo Star Wars" class="nav-logo">
+            <h1>Bounty Hunter Hub</h1>
+            <p>Servicios de Rastreo y Captura en toda la Galaxia</p>
+        </div>
+    
+
+
+        <nav>
+            <ul>
+                <li><a href="#soy-yo">El Reclutador</a></li>
+                <li><a href="#contratos">Contratos</a></li>
+                <li><a href="#holocrones">Info Secreta</a></li>
+                <li><a href="#gremio">Contratar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="soy-yo" class="container profile-card">
+            <h2>Quien soy </h2>
+            <article class="texto-perfil-full">
+                <p>Bienvenido a mi terminal. Mi nombre es Kelvin Daniel. Mi trabajo es asegurar que ningún objetivo escape del radar.</p>
+                <h3>Habilidades del Gremio</h3>
+                <ul>
+                    <li>Hackeo de terminales</li>
+                    <li>Sistemas de Encriptación</li>
+                    <li>Rastreo de Bugs en el Hiperespacio</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="contratos" class="container">
+            <h2>Contratos Disponibles</h2>
+            <div class="bounty-grid">
+                <article class="bounty-card">
+                    <div class="bounty-img-container">
+                        <img src="img/Din Djarin.png" alt="Contrato Mando">
+                    </div>
+                    <div class="bounty-info">
+                        <h3>El Mandaloriano</h3>
+                        <p>Especialista en misiones de alto riesgo. Honor garantizado.</p>
+                        <span class="price">75,000 Créditos</span>
+                    </div>
+                </article>
+
+                <article class="bounty-card">
+                    <div class="bounty-img-container">
+                        <img src="img/cad-bane.png" alt="Contrato Boba">
+                    </div>
+                    <div class="bounty-info">
+                        <h3>Cad Bane</h3>
+                        <p>Mercenario de sangre fría y experto en infiltración. El precio siempre es lo primero.</p>
+                        <span class="price">150,000 Créditos</span>
+                    </div>
+                </article>
+
+                <article class="bounty-card">
+                    <div class="bounty-img-container">
+                        <img src="img/boba-fett.png" alt="Contrato Cad bane">
+                    </div>
+                    <div class="bounty-info">
+                        <h3>Boba Fett</h3>
+                        <p>Leyenda del rastreo. "Nada de desintegraciones".</p>
+                        <span class="price">100,000 Créditos</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="holocrones" class="container">
+            <h2>Protocolos del Gremio</h2>
+            <details class="animated-details">
+                <summary>Código de Honor</summary>
+                <div class="content">
+                    <p>Ningún cazarrecompensas debe abandonar su contrato. La discreción es nuestra moneda de cambio.</p>
+                </div>
+            </details>
+        </section>
+
+        <section id="gremio" class="container form-card">
+            <h2>Publicar Nuevo Contrato</h2>
+            <p>Completa los datos para asignar un cazador a tu objetivo:</p>
+            
+            <form action="#" method="POST" class="formulario">
+                <label for="cliente">Nombre del Cliente (Tú):</label>
+                <input type="text" id="cliente" name="cliente" required placeholder="Ej. Jabba el Hutt">
+
+                <label for="objetivo">Nombre del Objetivo (Wanted):</label>
+                <input type="text" id="objetivo" name="objetivo" required placeholder="Ej. Han Solo">
+
+                <label for="recompensa">Recompensa (Créditos Galácticos):</label>
+                <input type="number" id="recompensa" name="recompensa" placeholder="Ej. 10000">
+
+                <label for="detalles">Especificaciones del Contrato:</label>
+                <textarea id="detalles" name="detalles" rows="4" required placeholder="¿Vivo o muerto? ¿En qué planeta se oculta?"></textarea>
+
+                <button type="submit" class="btn-enviar">Emitir Orden de Captura</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Gremio de Cazarrecompensas S.A. - Este es el camino.</p>
+    </footer>
+
+</body>
+</html>
